@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKDetailLimitedView">
+            <rect key="frame" x="0.0" y="0.0" width="1027" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVP-j3-5IJ" userLabel="TimeView">
+                    <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FVq-dB-Hnm"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HYdaojishibeijing" translatesAutoresizingMaskIntoConstraints="NO" id="Soy-dW-yGu">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="Qq2-7v-Ddi"/>
+                        <constraint firstAttribute="height" constant="8" id="wba-7d-OBz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还有16小时1分27秒 恢复正常售价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-GY-rcy" userLabel="TimeLabel">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bVP-j3-5IJ" secondAttribute="bottom" constant="15" id="1MP-1Y-obO"/>
+                <constraint firstItem="tRz-GY-rcy" firstAttribute="trailing" secondItem="bVP-j3-5IJ" secondAttribute="trailing" id="2YJ-oI-Odd"/>
+                <constraint firstItem="tRz-GY-rcy" firstAttribute="top" secondItem="bVP-j3-5IJ" secondAttribute="top" id="D5Z-re-web"/>
+                <constraint firstItem="tRz-GY-rcy" firstAttribute="bottom" secondItem="bVP-j3-5IJ" secondAttribute="bottom" id="OBv-1a-MSz"/>
+                <constraint firstItem="tRz-GY-rcy" firstAttribute="leading" secondItem="bVP-j3-5IJ" secondAttribute="leading" constant="49" id="OmX-71-VbH"/>
+                <constraint firstItem="bVP-j3-5IJ" firstAttribute="top" secondItem="Soy-dW-yGu" secondAttribute="bottom" id="Yon-hP-L8l"/>
+                <constraint firstAttribute="trailing" secondItem="bVP-j3-5IJ" secondAttribute="trailing" constant="15" id="cKx-Xu-vww"/>
+                <constraint firstItem="bVP-j3-5IJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gBc-63-ciK"/>
+                <constraint firstItem="Soy-dW-yGu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="hcF-4i-6bN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="limitedBgView" destination="bVP-j3-5IJ" id="8zt-Re-6T4"/>
+                <outlet property="limitedImageView" destination="Soy-dW-yGu" id="jdl-F6-VGa"/>
+                <outlet property="limitedLabel" destination="tRz-GY-rcy" id="l9n-XX-khh"/>
+            </connections>
+            <point key="canvasLocation" x="431.5" y="-235.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HYdaojishibeijing" width="12" height="7"/>
+    </resources>
+</document>

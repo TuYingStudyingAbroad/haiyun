@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MKOrderOperationTableViewCell" id="KGk-i7-Jjw" customClass="MKOrderOperationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUo-Wi-Kq2">
+                        <rect key="frame" x="48" y="11" width="80" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="删除订单">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMo-cN-Hzn">
+                        <rect key="frame" x="138" y="11" width="80" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="查看物流">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phu-h7-mvX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="0hg-P8-ysO"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLO-4J-4t0">
+                        <rect key="frame" x="228" y="11" width="80" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.30196078431372547" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Q0F-gF-1b0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <state key="normal" title="立即支付">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EUo-Wi-Kq2" firstAttribute="width" secondItem="SLO-4J-4t0" secondAttribute="width" id="1ov-cb-bos"/>
+                    <constraint firstItem="EUo-Wi-Kq2" firstAttribute="centerY" secondItem="cMo-cN-Hzn" secondAttribute="centerY" id="1xl-2A-fwZ"/>
+                    <constraint firstItem="SLO-4J-4t0" firstAttribute="leading" secondItem="cMo-cN-Hzn" secondAttribute="trailing" constant="10" id="3Fa-Tw-VBd"/>
+                    <constraint firstItem="cMo-cN-Hzn" firstAttribute="centerY" secondItem="SLO-4J-4t0" secondAttribute="centerY" id="JiK-Yb-a3u"/>
+                    <constraint firstItem="EUo-Wi-Kq2" firstAttribute="width" secondItem="cMo-cN-Hzn" secondAttribute="width" id="P5d-4F-2hW"/>
+                    <constraint firstItem="cMo-cN-Hzn" firstAttribute="leading" secondItem="EUo-Wi-Kq2" secondAttribute="trailing" constant="10" id="TYb-Xf-30K"/>
+                    <constraint firstItem="Phu-h7-mvX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ToY-hY-rTf"/>
+                    <constraint firstItem="cMo-cN-Hzn" firstAttribute="height" secondItem="SLO-4J-4t0" secondAttribute="height" id="Vcq-E6-WlH"/>
+                    <constraint firstAttribute="trailing" secondItem="Phu-h7-mvX" secondAttribute="trailing" id="aki-jP-ZuP"/>
+                    <constraint firstItem="EUo-Wi-Kq2" firstAttribute="height" secondItem="SLO-4J-4t0" secondAttribute="height" id="d1E-Nw-yBV"/>
+                    <constraint firstAttribute="bottom" secondItem="SLO-4J-4t0" secondAttribute="bottom" constant="10" id="k8q-AX-tC2"/>
+                    <constraint firstItem="cMo-cN-Hzn" firstAttribute="width" secondItem="SLO-4J-4t0" secondAttribute="width" id="l2L-Fu-83j"/>
+                    <constraint firstAttribute="trailing" secondItem="SLO-4J-4t0" secondAttribute="trailing" constant="12" id="oN0-Vy-Pu7"/>
+                    <constraint firstItem="Phu-h7-mvX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tFU-3O-NUn"/>
+                    <constraint firstItem="EUo-Wi-Kq2" firstAttribute="height" secondItem="cMo-cN-Hzn" secondAttribute="height" id="xpb-uh-UHH"/>
+                    <constraint firstItem="SLO-4J-4t0" firstAttribute="top" secondItem="Phu-h7-mvX" secondAttribute="bottom" constant="10" id="z7Q-06-jWy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="buttons" destination="SLO-4J-4t0" id="ebY-16-i6y"/>
+                <outletCollection property="buttons" destination="cMo-cN-Hzn" id="HmH-9s-dsy"/>
+                <outletCollection property="buttons" destination="EUo-Wi-Kq2" id="vQA-su-GQY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

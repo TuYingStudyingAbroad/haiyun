@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0tm-rD-DjD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Incom Detail View Controller-->
+        <scene sceneID="9AW-90-bKa">
+            <objects>
+                <viewController storyboardIdentifier="incomDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0tm-rD-DjD" customClass="incomDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SYf-gE-l5M"/>
+                        <viewControllerLayoutGuide type="bottom" id="kBe-jE-fsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ieP-6a-uht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-b9-B7E">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-Ua-wNa">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="137" id="6rm-Z9-fSN"/>
+                                            <constraint firstAttribute="width" constant="200" id="QFE-5A-Ibp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mF-uz-mTC">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1v4-vQ-quI"/>
+                                            <constraint firstAttribute="width" constant="100" id="hCS-W4-u2M"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有相关明细" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4H-DF-cBX">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wudingdan" translatesAutoresizingMaskIntoConstraints="NO" id="Lip-tS-YYA">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="DBh-57-zLU"/>
+                                            <constraint firstAttribute="width" constant="100" id="TGx-zz-esQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5mF-uz-mTC" firstAttribute="top" secondItem="BSw-Ua-wNa" secondAttribute="top" id="008-D4-31Z"/>
+                                    <constraint firstItem="i4H-DF-cBX" firstAttribute="centerX" secondItem="5mF-uz-mTC" secondAttribute="centerX" id="2Wt-91-CLh"/>
+                                    <constraint firstAttribute="centerX" secondItem="BSw-Ua-wNa" secondAttribute="centerX" id="Bqs-NU-6kH"/>
+                                    <constraint firstAttribute="centerY" secondItem="BSw-Ua-wNa" secondAttribute="centerY" constant="70" id="S3X-iO-CEG"/>
+                                    <constraint firstItem="5mF-uz-mTC" firstAttribute="centerX" secondItem="BSw-Ua-wNa" secondAttribute="centerX" id="UVw-Lg-YZF"/>
+                                    <constraint firstItem="BSw-Ua-wNa" firstAttribute="leading" secondItem="PCV-b9-B7E" secondAttribute="leading" constant="133" id="gso-Re-DJf"/>
+                                    <constraint firstItem="Lip-tS-YYA" firstAttribute="centerY" secondItem="5mF-uz-mTC" secondAttribute="centerY" id="peg-eX-g88"/>
+                                    <constraint firstItem="i4H-DF-cBX" firstAttribute="top" secondItem="5mF-uz-mTC" secondAttribute="bottom" constant="20" id="rnU-Mr-QyN"/>
+                                    <constraint firstItem="Lip-tS-YYA" firstAttribute="centerX" secondItem="5mF-uz-mTC" secondAttribute="centerX" id="uMd-Xe-kgm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gso-Re-DJf"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQj-KL-emw" customClass="HMSegmentedControl">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lI4-Z5-IsF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQj-KL-emw" firstAttribute="top" secondItem="SYf-gE-l5M" secondAttribute="bottom" id="BPX-cZ-2ni"/>
+                            <constraint firstItem="PCV-b9-B7E" firstAttribute="top" secondItem="SQj-KL-emw" secondAttribute="bottom" constant="5" id="GLI-2a-tZM"/>
+                            <constraint firstItem="PCV-b9-B7E" firstAttribute="leading" secondItem="ieP-6a-uht" secondAttribute="leading" id="XAD-qf-fb9"/>
+                            <constraint firstAttribute="trailing" secondItem="PCV-b9-B7E" secondAttribute="trailing" id="a1r-3e-GQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="SQj-KL-emw" secondAttribute="trailing" id="iHr-JU-S4S"/>
+                            <constraint firstItem="kBe-jE-fsB" firstAttribute="top" secondItem="PCV-b9-B7E" secondAttribute="bottom" id="ng0-xM-jIE"/>
+                            <constraint firstItem="SQj-KL-emw" firstAttribute="leading" secondItem="ieP-6a-uht" secondAttribute="leading" id="t2k-16-HWi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentContainer" destination="PCV-b9-B7E" id="tLB-X5-5zx"/>
+                        <outlet property="pageControl" destination="SQj-KL-emw" id="99l-1g-5dY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kg9-BJ-hAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wudingdan" width="103" height="103"/>
+    </resources>
+</document>

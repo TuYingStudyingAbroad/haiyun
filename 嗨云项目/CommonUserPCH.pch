@@ -1,0 +1,58 @@
+//
+//  CommonUserPCH.pch
+//  嗨云项目
+//
+//  Created by 杨鑫 on 16/5/6.
+//  Copyright © 2016年 杨鑫. All rights reserved.
+//
+
+#ifndef CommonUserPCH_pch
+#define CommonUserPCH_pch
+
+#import "UIColor+MKExtension.h"
+#import "UIView+MKExtension.h"
+#import <AVFoundation/AVFoundation.h>
+
+#import "MKHomePageViewController.h"
+
+#import "HYCommon.h"
+#import "UIBarButtonItem+HYYL.h"
+#import "MBProgressHUD+MKExtension.h"
+#import "HYSystemFuntion.h"
+#import "NSObject+Private.h"
+#import "HYThreeDealMsg.h"
+#import "AppDelegate.h"
+#import "HYNavigationController.h"
+
+#define  Config [UDConfig sharedUDConfig]
+#define  MockuaiVersionCode @"1.0.0"
+
+#define categoriesUrl @"http://mbeta.haiyn.com/merchant.html" //店铺管理的URL
+#define GenericDomainNames @"m.haiyn.com" //店铺管理的URL配置
+#define GenericDomainNamesBeta @"mbeta.haiyn.com" //店铺管理的BeatURL配置
+#define GenericDomainNamesTest @"mtest.haiyn.com" //店铺管理的TestURL配置
+#define categoriesfenleiUrl @"http://act.haiyn.com/m/fenleiyemian.html" //分类URL
+#define cookieTokenKey @"access_token"          //html 存储access_token
+#define cookieDomain @"m.haiyn.com"         //html 存储 域名
+#define cookieTokenKeyRefresh @"refresh_token" //html 存储refresh_token
+#define BaseHtmlURL [MKNetworking getBaseHtmlURL]  //Html URLBase
+
+
+/**正式环境**/
+#define BaseUrl @"http://api.haiyn.com"                   //请求接口URL
+#define SellerBetaApi @"http://seller.haiyn.com/bossmanager/platform/switch.do"
+
+/*预发环境*/
+//#define BaseUrl @"http://apibeta.haiyn.com" //请求接口URL
+//#define SellerBetaApi @"http://sellerbeta.haiyn.com/bossmanager/platform/switch.do"
+
+
+/****测试环境***/
+//#define BaseUrl @"http://apitest.haiyn.com" //请求接口URL
+//#define SellerBetaApi @"http://sellerbeta.haiyn.com/bossmanager/platform/switch.do"
+
+/****连调环境***/
+//#define BaseUrl @"http://192.168.8.16:8080" //请求接口URL
+//#define SellerBetaApi @"http://sellerbeta.haiyn.com/bossmanager/platform/switch.do"
+
+#endif /* CommonUserPCH_pch */

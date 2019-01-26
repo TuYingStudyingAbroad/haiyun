@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKItemShareRatioView">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQ7-BT-xLd">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="0.5"/>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="vha-M3-Wpz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总奖励:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-7C-01c">
+                    <rect key="frame" x="15" y="0.5" width="41" height="39.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轻松分享，更有奖金到手" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtC-A2-J0z">
+                    <rect key="frame" x="185" y="0.5" width="135" height="39.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um8-u2-KRg">
+                    <rect key="frame" x="56" y="0.5" width="40" height="39.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vtC-A2-J0z" secondAttribute="trailing" constant="15" id="4mh-9B-wkK"/>
+                <constraint firstItem="Um8-u2-KRg" firstAttribute="top" secondItem="FQ7-BT-xLd" secondAttribute="bottom" id="6tv-3j-GYy"/>
+                <constraint firstAttribute="bottom" secondItem="vtC-A2-J0z" secondAttribute="bottom" id="8gh-cn-jSz"/>
+                <constraint firstItem="Um8-u2-KRg" firstAttribute="leading" secondItem="jxe-7C-01c" secondAttribute="trailing" id="9fn-KK-jmI"/>
+                <constraint firstItem="jxe-7C-01c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DYm-1h-hH1"/>
+                <constraint firstItem="FQ7-BT-xLd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IZr-gJ-U3h"/>
+                <constraint firstAttribute="bottom" secondItem="jxe-7C-01c" secondAttribute="bottom" id="JIQ-hD-c3D"/>
+                <constraint firstAttribute="trailing" secondItem="FQ7-BT-xLd" secondAttribute="trailing" id="Kvu-AJ-xjs"/>
+                <constraint firstItem="FQ7-BT-xLd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tlm-rU-DLr"/>
+                <constraint firstItem="jxe-7C-01c" firstAttribute="top" secondItem="FQ7-BT-xLd" secondAttribute="bottom" id="cGH-B6-c9R"/>
+                <constraint firstAttribute="bottom" secondItem="Um8-u2-KRg" secondAttribute="bottom" id="rO4-nW-fYO"/>
+                <constraint firstItem="vtC-A2-J0z" firstAttribute="top" secondItem="FQ7-BT-xLd" secondAttribute="bottom" id="riO-wb-7Iv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shareRatioLabel" destination="Um8-u2-KRg" id="gAG-gW-GSb"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-243"/>
+        </view>
+    </objects>
+</document>

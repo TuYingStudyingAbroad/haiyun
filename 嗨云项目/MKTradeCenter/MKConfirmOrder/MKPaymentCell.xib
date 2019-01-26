@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="MKPaymentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-B6-z02">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ief-lr-pTz"/>
+                            <constraint firstAttribute="width" constant="30" id="pbk-cg-yaT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝支付" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aD-jc-Cvq">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐支付宝用户支付" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwC-bb-g73">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxG-Ol-lI1">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Qa1-Bm-RND"/>
+                            <constraint firstAttribute="height" constant="36" id="Uez-pz-YZo"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" image="unselect_cycle">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" image="selected_cycle"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KwC-bb-g73" firstAttribute="leading" secondItem="wYg-B6-z02" secondAttribute="trailing" constant="10" id="1gm-Sd-pnf"/>
+                    <constraint firstItem="wYg-B6-z02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="HGk-eg-5DG"/>
+                    <constraint firstItem="KwC-bb-g73" firstAttribute="top" secondItem="0aD-jc-Cvq" secondAttribute="bottom" id="I9C-J3-ODN"/>
+                    <constraint firstAttribute="trailing" secondItem="NxG-Ol-lI1" secondAttribute="trailing" constant="12" id="OhX-4T-skS"/>
+                    <constraint firstItem="0aD-jc-Cvq" firstAttribute="top" secondItem="wYg-B6-z02" secondAttribute="top" id="VQe-MO-GP7"/>
+                    <constraint firstItem="wYg-B6-z02" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fbr-pA-ez1"/>
+                    <constraint firstItem="0aD-jc-Cvq" firstAttribute="leading" secondItem="wYg-B6-z02" secondAttribute="trailing" constant="10" id="mcd-RN-BdS"/>
+                    <constraint firstAttribute="centerY" secondItem="NxG-Ol-lI1" secondAttribute="centerY" id="zbi-My-1nJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="paymentBtn" destination="NxG-Ol-lI1" id="WUW-ec-f2c"/>
+                <outlet property="paymentImageView" destination="wYg-B6-z02" id="Tea-o1-0yq"/>
+                <outlet property="paymentLabel" destination="0aD-jc-Cvq" id="vIA-jA-DGA"/>
+                <outlet property="tipLabel" destination="KwC-bb-g73" id="Qcq-sg-v8x"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="150"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected_cycle" width="20" height="20"/>
+        <image name="unselect_cycle" width="20" height="20"/>
+    </resources>
+</document>

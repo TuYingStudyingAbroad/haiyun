@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HYOnewordView">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uql-7M-9rL">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEw-xv-6bI" userLabel="KeyButton">
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BNK-4V-Rgq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl2-Qc-Rak" userLabel="DelButton">
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="0DV-WY-4M6"/>
+                        <constraint firstAttribute="height" constant="16" id="Sll-Ww-knW"/>
+                    </constraints>
+                    <state key="normal" image="HYkuaijieshanchu"/>
+                    <connections>
+                        <action selector="onBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ewA-xD-O0w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fEw-xv-6bI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="0I4-26-8N0"/>
+                <constraint firstItem="Uql-7M-9rL" firstAttribute="bottom" secondItem="fEw-xv-6bI" secondAttribute="bottom" id="530-iN-aAa"/>
+                <constraint firstAttribute="trailing" secondItem="fEw-xv-6bI" secondAttribute="trailing" constant="6" id="H6e-uE-Kum"/>
+                <constraint firstAttribute="trailing" secondItem="Zl2-Qc-Rak" secondAttribute="trailing" constant="1" id="Mja-9M-528"/>
+                <constraint firstItem="Uql-7M-9rL" firstAttribute="leading" secondItem="fEw-xv-6bI" secondAttribute="leading" constant="12" id="UZe-vN-SMG"/>
+                <constraint firstItem="fEw-xv-6bI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="dOK-Lu-gdK"/>
+                <constraint firstItem="Zl2-Qc-Rak" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="f1x-jp-r6S"/>
+                <constraint firstAttribute="bottom" secondItem="fEw-xv-6bI" secondAttribute="bottom" constant="6" id="pGh-DA-dh8"/>
+                <constraint firstItem="Uql-7M-9rL" firstAttribute="trailing" secondItem="fEw-xv-6bI" secondAttribute="trailing" constant="-12" id="v6H-61-VPE"/>
+                <constraint firstItem="Uql-7M-9rL" firstAttribute="top" secondItem="fEw-xv-6bI" secondAttribute="top" id="xL9-Yi-LiT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="delBtn" destination="Zl2-Qc-Rak" id="xIS-6f-nqa"/>
+                <outlet property="keyBtn" destination="fEw-xv-6bI" id="wEi-5T-2Sw"/>
+                <outlet property="wordLabel" destination="Uql-7M-9rL" id="aZI-Db-Iuv"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="-415"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HYkuaijieshanchu" width="14" height="14"/>
+    </resources>
+</document>

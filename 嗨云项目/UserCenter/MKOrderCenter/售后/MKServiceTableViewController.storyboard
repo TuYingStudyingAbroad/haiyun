@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pms-F9-5Va">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--服务选择-->
+        <scene sceneID="vaZ-8I-0w4">
+            <objects>
+                <tableViewController storyboardIdentifier="MKServiceTableViewController" title="服务选择" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pms-F9-5Va" customClass="MKServiceTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGa-nw-Cgf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="oWe-og-r7Z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="66" id="rcT-qH-gXj">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rcT-qH-gXj" id="H96-td-l9N">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refund" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-Q1-Bw3">
+                                                    <rect key="frame" x="12" y="5" width="56" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="aIP-CE-7o0"/>
+                                                        <constraint firstAttribute="width" constant="56" id="hdc-Gd-3XK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已收到货，需要退还已收到的货物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f2-gp-TR4">
+                                                    <rect key="frame" x="80" y="35" width="195" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退货退款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enq-4e-8hE">
+                                                    <rect key="frame" x="80" y="5" width="60" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5f2-gp-TR4" firstAttribute="top" secondItem="Enq-4e-8hE" secondAttribute="bottom" constant="12" id="B1U-JW-hEg"/>
+                                                <constraint firstItem="CZ4-Q1-Bw3" firstAttribute="centerY" secondItem="H96-td-l9N" secondAttribute="centerY" id="CmN-la-gWg"/>
+                                                <constraint firstItem="5f2-gp-TR4" firstAttribute="leading" secondItem="Enq-4e-8hE" secondAttribute="leading" id="Nal-oT-qwn"/>
+                                                <constraint firstItem="Enq-4e-8hE" firstAttribute="top" secondItem="CZ4-Q1-Bw3" secondAttribute="top" id="f2F-we-aOB"/>
+                                                <constraint firstItem="Enq-4e-8hE" firstAttribute="leading" secondItem="CZ4-Q1-Bw3" secondAttribute="trailing" constant="12" id="ks4-hE-6OA"/>
+                                                <constraint firstItem="CZ4-Q1-Bw3" firstAttribute="leading" secondItem="H96-td-l9N" secondAttribute="leading" constant="12" id="tDd-bZ-9kV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="66" id="lle-uU-45i">
+                                        <rect key="frame" x="0.0" y="130" width="600" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lle-uU-45i" id="af4-Xx-aj8">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="only_refund" translatesAutoresizingMaskIntoConstraints="NO" id="BeF-aM-fNl">
+                                                    <rect key="frame" x="12" y="5" width="56" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="UVM-RJ-O3M"/>
+                                                        <constraint firstAttribute="width" constant="56" id="ssp-qO-UW6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅退款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4X-Ec-PXC">
+                                                    <rect key="frame" x="80" y="5" width="45" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未收到货，或与卖家协商同意前提下申请" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP5-ko-mHa">
+                                                    <rect key="frame" x="80" y="35" width="234" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l4X-Ec-PXC" firstAttribute="leading" secondItem="BeF-aM-fNl" secondAttribute="trailing" constant="12" id="7gr-0s-cOQ"/>
+                                                <constraint firstItem="IP5-ko-mHa" firstAttribute="top" secondItem="l4X-Ec-PXC" secondAttribute="bottom" constant="12" id="EO0-t3-6Mf"/>
+                                                <constraint firstItem="BeF-aM-fNl" firstAttribute="leading" secondItem="af4-Xx-aj8" secondAttribute="leading" constant="12" id="XCw-eW-hQQ"/>
+                                                <constraint firstItem="l4X-Ec-PXC" firstAttribute="top" secondItem="BeF-aM-fNl" secondAttribute="top" id="ZtS-Kq-yOR"/>
+                                                <constraint firstItem="IP5-ko-mHa" firstAttribute="leading" secondItem="l4X-Ec-PXC" secondAttribute="leading" id="dUH-Me-J6p"/>
+                                                <constraint firstItem="BeF-aM-fNl" firstAttribute="centerY" secondItem="af4-Xx-aj8" secondAttribute="centerY" id="seY-p2-cbD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Pms-F9-5Va" id="j2t-Kd-7Ce"/>
+                            <outlet property="delegate" destination="Pms-F9-5Va" id="S06-E2-HOT"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuL-qd-0Lm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="218"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="only_refund" width="28" height="28"/>
+        <image name="refund" width="28" height="28"/>
+    </resources>
+</document>

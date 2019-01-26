@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NV2-mg-YuR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Scollection View Controller-->
+        <scene sceneID="5Gw-aD-uSq">
+            <objects>
+                <viewController storyboardIdentifier="HScollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NV2-mg-YuR" customClass="HScollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fhe-mU-fFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Yu-eG-xNk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W2r-nr-rV4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ta-zn-0Fh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Ta-zn-0Fh" secondAttribute="trailing" id="1ka-CB-SQ1"/>
+                            <constraint firstItem="4Yu-eG-xNk" firstAttribute="top" secondItem="2Ta-zn-0Fh" secondAttribute="bottom" id="43x-ze-ob5"/>
+                            <constraint firstItem="2Ta-zn-0Fh" firstAttribute="leading" secondItem="W2r-nr-rV4" secondAttribute="leading" id="6Pw-sg-Ze3"/>
+                            <constraint firstItem="2Ta-zn-0Fh" firstAttribute="top" secondItem="Fhe-mU-fFZ" secondAttribute="bottom" id="jku-9t-PrU"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentContainer" destination="2Ta-zn-0Fh" id="yrb-Ux-2dO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85I-YA-Swp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="510"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vhd-Nk-X4u" customClass="BlackWaitView">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zKz-Wj-ey5">
+                    <rect key="frame" x="46" y="34" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="正在上传图片0/0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI5-dg-acl">
+                    <rect key="frame" x="76" y="36" width="105" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="tI5-dg-acl" secondAttribute="centerY" id="6mb-M5-qng"/>
+                <constraint firstItem="tI5-dg-acl" firstAttribute="leading" secondItem="zKz-Wj-ey5" secondAttribute="trailing" constant="10" id="Cjw-Gw-LDN"/>
+                <constraint firstItem="tI5-dg-acl" firstAttribute="centerY" secondItem="zKz-Wj-ey5" secondAttribute="centerY" id="GAH-Rr-zEf"/>
+                <constraint firstAttribute="centerX" secondItem="tI5-dg-acl" secondAttribute="centerX" id="cU9-RR-zBJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="blackLabelView" destination="tI5-dg-acl" id="spc-er-jXE"/>
+                <outlet property="plck" destination="zKz-Wj-ey5" id="khW-6A-q1b"/>
+            </connections>
+            <point key="canvasLocation" x="567" y="-34.5"/>
+        </view>
+    </objects>
+</document>

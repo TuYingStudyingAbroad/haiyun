@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VNF-RP-nda" customClass="MKPaymentView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-vk-RzU">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付金额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJd-9x-le9">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="199.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQt-s4-m4h">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-Cn-8xB">
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.20784313730000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="113" id="HxF-fE-CNh"/>
+                                <constraint firstAttribute="height" constant="34" id="acd-Sh-ewt"/>
+                            </constraints>
+                            <state key="normal" title="立即支付">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibY-Sc-4uL">
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="yJd-9x-le9" secondAttribute="bottom" id="4Z8-cv-XQY"/>
+                        <constraint firstItem="yJd-9x-le9" firstAttribute="centerY" secondItem="BcB-vk-RzU" secondAttribute="centerY" id="9KO-7A-0dj"/>
+                        <constraint firstItem="CQt-s4-m4h" firstAttribute="centerY" secondItem="BcB-vk-RzU" secondAttribute="centerY" id="9lU-Vv-sKg"/>
+                        <constraint firstItem="yJd-9x-le9" firstAttribute="leading" secondItem="BcB-vk-RzU" secondAttribute="leading" id="DWk-EK-HgK"/>
+                        <constraint firstAttribute="trailing" secondItem="sE7-Cn-8xB" secondAttribute="trailing" constant="12" id="IA7-bJ-ktv"/>
+                        <constraint firstItem="CQt-s4-m4h" firstAttribute="leading" secondItem="ibY-Sc-4uL" secondAttribute="trailing" id="VW0-X2-OMF"/>
+                        <constraint firstItem="CQt-s4-m4h" firstAttribute="top" secondItem="BcB-vk-RzU" secondAttribute="top" id="XJQ-l8-w8U"/>
+                        <constraint firstItem="yJd-9x-le9" firstAttribute="top" secondItem="BcB-vk-RzU" secondAttribute="top" id="auH-tQ-UIk"/>
+                        <constraint firstItem="ibY-Sc-4uL" firstAttribute="leading" secondItem="yJd-9x-le9" secondAttribute="trailing" constant="1" id="e7S-K4-DG5"/>
+                        <constraint firstItem="yJd-9x-le9" firstAttribute="leading" secondItem="BcB-vk-RzU" secondAttribute="leading" id="ghn-Nu-wQR"/>
+                        <constraint firstItem="sE7-Cn-8xB" firstAttribute="centerY" secondItem="BcB-vk-RzU" secondAttribute="centerY" id="iF8-Qy-xLg"/>
+                        <constraint firstItem="ibY-Sc-4uL" firstAttribute="centerY" secondItem="BcB-vk-RzU" secondAttribute="centerY" constant="2" id="wJd-il-7QX"/>
+                        <constraint firstAttribute="bottom" secondItem="CQt-s4-m4h" secondAttribute="bottom" id="zFP-eq-E0c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BcB-vk-RzU" firstAttribute="top" secondItem="VNF-RP-nda" secondAttribute="top" constant="5" id="0fV-hn-lQP"/>
+                <constraint firstAttribute="trailing" secondItem="BcB-vk-RzU" secondAttribute="trailing" id="5Me-wH-zrG"/>
+                <constraint firstAttribute="bottom" secondItem="BcB-vk-RzU" secondAttribute="bottom" constant="5" id="BO5-zJ-rPu"/>
+                <constraint firstItem="BcB-vk-RzU" firstAttribute="leading" secondItem="VNF-RP-nda" secondAttribute="leading" constant="12" id="bNo-Y4-WmX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moneyLabel" destination="ibY-Sc-4uL" id="vic-CI-xT8"/>
+                <outlet property="placeLabel" destination="CQt-s4-m4h" id="1D2-yv-M5a"/>
+                <outlet property="priceBut" destination="sE7-Cn-8xB" id="WtN-wj-hO9"/>
+                <outlet property="priceNage" destination="yJd-9x-le9" id="icj-r8-9bZ"/>
+            </connections>
+            <point key="canvasLocation" x="699" y="152"/>
+        </view>
+    </objects>
+</document>

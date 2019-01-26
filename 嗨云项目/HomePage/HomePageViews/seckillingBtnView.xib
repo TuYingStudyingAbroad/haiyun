@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6HQ-Q5-WbG" customClass="seckillingBtnView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upx-2Z-mty">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00专场" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRF-j4-955">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WRF-j4-955" firstAttribute="leading" secondItem="upx-2Z-mty" secondAttribute="leading" constant="1" id="2uv-1g-32k"/>
+                        <constraint firstItem="WRF-j4-955" firstAttribute="top" secondItem="upx-2Z-mty" secondAttribute="top" constant="1" id="3QH-Mj-ScZ"/>
+                        <constraint firstAttribute="bottom" secondItem="WRF-j4-955" secondAttribute="bottom" constant="-2" id="hcI-t7-eeW"/>
+                        <constraint firstAttribute="trailing" secondItem="WRF-j4-955" secondAttribute="trailing" constant="1" id="uEQ-YE-oc7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="upx-2Z-mty" secondAttribute="bottom" id="FPH-qQ-XIS"/>
+                <constraint firstItem="upx-2Z-mty" firstAttribute="top" secondItem="6HQ-Q5-WbG" secondAttribute="top" id="HdJ-G9-rtf"/>
+                <constraint firstAttribute="trailing" secondItem="upx-2Z-mty" secondAttribute="trailing" id="Hra-Uo-ncI"/>
+                <constraint firstItem="upx-2Z-mty" firstAttribute="leading" secondItem="6HQ-Q5-WbG" secondAttribute="leading" id="VX8-Vc-u2e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="seckillingBVLab" destination="WRF-j4-955" id="kWf-8b-CVi"/>
+            </connections>
+            <point key="canvasLocation" x="-132" y="39"/>
+        </view>
+    </objects>
+</document>

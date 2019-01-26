@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MKProgressTableViewCell" rowHeight="258" id="KGk-i7-Jjw" customClass="MKProgressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="MKProgressTableViewCell" image="lishijindu" highlightedImage="dangqianjindu" translatesAutoresizingMaskIntoConstraints="NO" id="CJA-KO-W0K">
+                        <rect key="frame" x="12" y="32.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="21k-z5-yZ9"/>
+                            <constraint firstAttribute="width" constant="15" id="GBv-Yk-bGR"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-jC-9NW">
+                        <rect key="frame" x="19" y="-1" width="1" height="33.5"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="NRA-bm-tM0"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.80000000000000004" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-Y8-mEo">
+                        <rect key="frame" x="19" y="47.5" width="1" height="32.5"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="WTD-iB-efa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行处理中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="do3-dh-fyE">
+                        <rect key="frame" x="37" y="32.5" width="278" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="qiD-2V-y9W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.61568627450980395" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2012-01-01 12:12:12" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doi-Dr-HJ6">
+                        <rect key="frame" x="37" y="52.5" width="278" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.62745098039215685" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ed2-Y8-mEo" firstAttribute="centerX" secondItem="CJA-KO-W0K" secondAttribute="centerX" id="2SJ-eC-xhA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="do3-dh-fyE" secondAttribute="trailing" id="6Br-kj-xWl"/>
+                    <constraint firstItem="doi-Dr-HJ6" firstAttribute="top" secondItem="do3-dh-fyE" secondAttribute="bottom" id="DA4-OF-iG2"/>
+                    <constraint firstItem="CJA-KO-W0K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EpJ-NK-pk6"/>
+                    <constraint firstAttribute="bottom" secondItem="ed2-Y8-mEo" secondAttribute="bottom" constant="-1" id="PML-Jg-cXq"/>
+                    <constraint firstItem="doi-Dr-HJ6" firstAttribute="height" secondItem="do3-dh-fyE" secondAttribute="height" id="VZB-Yu-pgc"/>
+                    <constraint firstItem="doi-Dr-HJ6" firstAttribute="trailing" secondItem="do3-dh-fyE" secondAttribute="trailing" id="Vnh-R0-RS4"/>
+                    <constraint firstItem="doi-Dr-HJ6" firstAttribute="leading" secondItem="do3-dh-fyE" secondAttribute="leading" id="dlr-n7-UfV"/>
+                    <constraint firstItem="CJA-KO-W0K" firstAttribute="top" secondItem="NhC-jC-9NW" secondAttribute="bottom" id="eGg-fj-eJK"/>
+                    <constraint firstItem="CJA-KO-W0K" firstAttribute="centerX" secondItem="NhC-jC-9NW" secondAttribute="centerX" id="gOE-xr-nif"/>
+                    <constraint firstItem="NhC-jC-9NW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-1" id="hhG-BU-vg8"/>
+                    <constraint firstItem="do3-dh-fyE" firstAttribute="leading" secondItem="CJA-KO-W0K" secondAttribute="trailing" constant="10" id="kze-3k-ra2"/>
+                    <constraint firstItem="CJA-KO-W0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="tuv-ar-ogN"/>
+                    <constraint firstItem="do3-dh-fyE" firstAttribute="top" secondItem="CJA-KO-W0K" secondAttribute="top" id="yeC-fC-9nu"/>
+                    <constraint firstItem="ed2-Y8-mEo" firstAttribute="top" secondItem="CJA-KO-W0K" secondAttribute="bottom" id="zo2-AE-1l5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="progressImgV" destination="CJA-KO-W0K" id="zn7-nH-u5r"/>
+                <outlet property="statuLab" destination="do3-dh-fyE" id="pkv-vb-0fp"/>
+                <outlet property="timeLab" destination="doi-Dr-HJ6" id="mrz-7p-Kuq"/>
+            </connections>
+            <point key="canvasLocation" x="151.5" y="191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dangqianjindu" width="15" height="15"/>
+        <image name="lishijindu" width="12" height="12"/>
+    </resources>
+</document>

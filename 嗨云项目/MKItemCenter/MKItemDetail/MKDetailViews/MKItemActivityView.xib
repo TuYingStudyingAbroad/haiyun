@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKItemActivityView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huodong" translatesAutoresizingMaskIntoConstraints="NO" id="AJk-h9-A4L" customClass="huodong">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BET-nM-j4m"/>
+                        <constraint firstAttribute="height" constant="17" id="Nt9-Sg-5nj"/>
+                        <constraint firstAttribute="width" constant="30" id="w1q-LX-pdO"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BET-nM-j4m"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_more" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-dC-0hL">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="PXg-wX-WM2"/>
+                        <constraint firstAttribute="width" constant="10" id="wTd-pk-cF6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xf-vS-FAz"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="满减送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-pY-h1P">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AJk-h9-A4L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="7cv-q1-fOY"/>
+                <constraint firstItem="Tor-pY-h1P" firstAttribute="centerY" secondItem="AJk-h9-A4L" secondAttribute="centerY" id="AWw-sP-G5L"/>
+                <constraint firstAttribute="trailing" secondItem="6xf-vS-FAz" secondAttribute="trailing" id="TQQ-Ve-iNW"/>
+                <constraint firstItem="6xf-vS-FAz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UZv-0Y-D5o"/>
+                <constraint firstItem="6xf-vS-FAz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ac1-tT-giE"/>
+                <constraint firstAttribute="trailing" secondItem="kn5-dC-0hL" secondAttribute="trailing" constant="12" id="by2-bi-gkz"/>
+                <constraint firstAttribute="bottom" secondItem="6xf-vS-FAz" secondAttribute="bottom" id="hn2-fc-jHQ"/>
+                <constraint firstItem="kn5-dC-0hL" firstAttribute="centerY" secondItem="AJk-h9-A4L" secondAttribute="centerY" id="kXo-sF-ZeB"/>
+                <constraint firstItem="kn5-dC-0hL" firstAttribute="leading" secondItem="Tor-pY-h1P" secondAttribute="trailing" constant="20" id="kbR-rY-lAx"/>
+                <constraint firstItem="Tor-pY-h1P" firstAttribute="leading" secondItem="AJk-h9-A4L" secondAttribute="trailing" constant="9" id="nLA-lK-lji"/>
+                <constraint firstItem="AJk-h9-A4L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="o7t-t8-oT0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityButton" destination="6xf-vS-FAz" id="6da-va-Om9"/>
+                <outlet property="activityLabel" destination="Tor-pY-h1P" id="KIP-04-dOu"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="24.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_more" width="7" height="13"/>
+        <image name="huodong" width="31" height="17"/>
+    </resources>
+</document>

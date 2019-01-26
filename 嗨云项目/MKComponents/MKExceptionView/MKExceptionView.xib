@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKExceptionView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrD-0A-00N">
+                    <rect key="frame" x="0.0" y="211.5" width="600" height="137"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WK2-5S-fdo">
+                            <rect key="frame" x="250" y="0.0" width="100" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_box" translatesAutoresizingMaskIntoConstraints="NO" id="5f0-01-G64">
+                                    <rect key="frame" x="25" y="30" width="51" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="5f0-01-G64" secondAttribute="centerX" id="dJH-vT-DW3"/>
+                                <constraint firstAttribute="width" constant="100" id="eim-Vr-r9R"/>
+                                <constraint firstAttribute="centerY" secondItem="5f0-01-G64" secondAttribute="centerY" id="fgr-0q-J4c"/>
+                                <constraint firstAttribute="height" constant="100" id="sTO-j3-36M"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品已下架/不存在" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia9-aZ-6nV">
+                            <rect key="frame" x="242" y="120" width="117" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WK2-5S-fdo" firstAttribute="top" secondItem="WrD-0A-00N" secondAttribute="top" id="1iE-j7-QeS"/>
+                        <constraint firstAttribute="centerX" secondItem="ia9-aZ-6nV" secondAttribute="centerX" id="64g-kG-el1"/>
+                        <constraint firstItem="ia9-aZ-6nV" firstAttribute="top" secondItem="WK2-5S-fdo" secondAttribute="bottom" constant="20" id="AQF-2L-zFc"/>
+                        <constraint firstAttribute="centerX" secondItem="WK2-5S-fdo" secondAttribute="centerX" id="Ckl-iq-pYU"/>
+                        <constraint firstAttribute="bottom" secondItem="ia9-aZ-6nV" secondAttribute="bottom" id="NAk-WR-jFW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="WrD-0A-00N" secondAttribute="centerY" constant="20" id="myr-Al-8di"/>
+                <constraint firstAttribute="trailing" secondItem="WrD-0A-00N" secondAttribute="trailing" id="nvY-56-2IL"/>
+                <constraint firstItem="WrD-0A-00N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pIX-lJ-mnd"/>
+            </constraints>
+            <connections>
+                <outlet property="circleView" destination="WK2-5S-fdo" id="DmE-dM-RhG"/>
+                <outlet property="exceptionLabel" destination="ia9-aZ-6nV" id="Ac2-Gr-aJP"/>
+                <outlet property="imageView" destination="5f0-01-G64" id="byq-bm-HlJ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_box" width="51" height="40"/>
+    </resources>
+</document>

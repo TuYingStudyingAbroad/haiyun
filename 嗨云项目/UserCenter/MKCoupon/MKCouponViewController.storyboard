@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G1E-1S-J63">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Coupon View Controller-->
+        <scene sceneID="tnZ-ah-X65">
+            <objects>
+                <viewController id="G1E-1S-J63" customClass="MKCouponViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TVg-o0-RfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="S16-we-F0C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbO-1T-DSU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Om2-az-qho">
+                                <rect key="frame" x="0.0" y="20" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Z29-02-fuq"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-rj-5tT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="G1E-1S-J63" id="z2W-EM-ccm"/>
+                                    <outlet property="delegate" destination="G1E-1S-J63" id="j7o-rX-rUZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JgF-rj-5tT" firstAttribute="top" secondItem="Om2-az-qho" secondAttribute="bottom" id="BEp-cW-Atq"/>
+                            <constraint firstAttribute="trailing" secondItem="Om2-az-qho" secondAttribute="trailing" id="Lg5-Lu-Vct"/>
+                            <constraint firstItem="Om2-az-qho" firstAttribute="top" secondItem="TVg-o0-RfG" secondAttribute="bottom" id="YqE-bx-JyY"/>
+                            <constraint firstAttribute="trailing" secondItem="JgF-rj-5tT" secondAttribute="trailing" id="fhL-nf-1dO"/>
+                            <constraint firstItem="JgF-rj-5tT" firstAttribute="leading" secondItem="pbO-1T-DSU" secondAttribute="leading" id="nk3-ud-L1g"/>
+                            <constraint firstItem="Om2-az-qho" firstAttribute="leading" secondItem="pbO-1T-DSU" secondAttribute="leading" id="oBb-60-6QS"/>
+                            <constraint firstItem="S16-we-F0C" firstAttribute="bottom" secondItem="JgF-rj-5tT" secondAttribute="bottom" id="sjN-zc-CZX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="highly" destination="Z29-02-fuq" id="IrA-Wx-h5D"/>
+                        <outlet property="tableView" destination="JgF-rj-5tT" id="CIA-m5-Ej5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxZ-Tk-tJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.5" y="132.5"/>
+        </scene>
+    </scenes>
+</document>

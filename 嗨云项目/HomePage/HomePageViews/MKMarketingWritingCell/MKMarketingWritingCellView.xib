@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MKMarketingWritingCellView" id="iPg-Ey-XVd" customClass="MKMarketingWritingCellView">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新品大赏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-qM-xo4">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3Ha-HF-rd3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xian_you" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-nh-JTD"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="xian_zuo" translatesAutoresizingMaskIntoConstraints="NO" id="2Nc-73-jGH"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天早上10点~晚上8点推新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHn-V8-Lad">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4tT-IT-DTM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xingzhuan" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-90-k2w"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x5Y-90-k2w" firstAttribute="centerX" secondItem="iPg-Ey-XVd" secondAttribute="centerX" id="2aS-rr-IuX"/>
+                <constraint firstItem="XHn-V8-Lad" firstAttribute="top" secondItem="Zxt-qM-xo4" secondAttribute="bottom" constant="3" id="3oB-rQ-tMp"/>
+                <constraint firstItem="zOk-nh-JTD" firstAttribute="centerY" secondItem="Zxt-qM-xo4" secondAttribute="centerY" id="5cg-Fl-n02"/>
+                <constraint firstItem="2Nc-73-jGH" firstAttribute="leading" secondItem="iPg-Ey-XVd" secondAttribute="leading" constant="15" id="6GW-qp-Emf"/>
+                <constraint firstItem="Zxt-qM-xo4" firstAttribute="top" secondItem="iPg-Ey-XVd" secondAttribute="top" constant="10" id="PIB-pH-Ph4"/>
+                <constraint firstItem="zOk-nh-JTD" firstAttribute="leading" secondItem="Zxt-qM-xo4" secondAttribute="trailing" constant="10" id="XWM-CT-7vh"/>
+                <constraint firstItem="XHn-V8-Lad" firstAttribute="leading" secondItem="iPg-Ey-XVd" secondAttribute="leading" constant="10" id="YqC-tw-2Y1"/>
+                <constraint firstItem="x5Y-90-k2w" firstAttribute="top" secondItem="XHn-V8-Lad" secondAttribute="bottom" constant="3" id="fik-d0-1lR"/>
+                <constraint firstItem="Zxt-qM-xo4" firstAttribute="leading" secondItem="2Nc-73-jGH" secondAttribute="trailing" constant="10" id="kPQ-hF-dtv"/>
+                <constraint firstAttribute="trailing" secondItem="XHn-V8-Lad" secondAttribute="trailing" constant="10" id="kaG-rC-m1L"/>
+                <constraint firstItem="2Nc-73-jGH" firstAttribute="centerY" secondItem="Zxt-qM-xo4" secondAttribute="centerY" id="pps-Rf-d6A"/>
+                <constraint firstItem="Zxt-qM-xo4" firstAttribute="centerX" secondItem="iPg-Ey-XVd" secondAttribute="centerX" id="w7q-eH-H6f"/>
+                <constraint firstAttribute="trailing" secondItem="zOk-nh-JTD" secondAttribute="trailing" constant="15" id="x1D-Nt-oXy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomTitleLan" destination="XHn-V8-Lad" id="MR0-AM-MHR"/>
+                <outlet property="topTitleLab" destination="Zxt-qM-xo4" id="MNL-dK-9ZO"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="-399"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xian_you" width="75" height="1"/>
+        <image name="xian_zuo" width="75" height="1"/>
+        <image name="xingzhuan" width="50" height="5"/>
+    </resources>
+</document>

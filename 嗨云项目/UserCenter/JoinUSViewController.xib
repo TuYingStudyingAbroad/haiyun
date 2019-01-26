@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinUSViewController">
+            <connections>
+                <outlet property="joinBtn" destination="7qL-B0-K5Q" id="gjE-tm-mCG"/>
+                <outlet property="ruleBtn" destination="ojP-Nf-gpo" id="PbO-Ru-4CN"/>
+                <outlet property="sureBtn" destination="NMX-Ec-8ck" id="xRU-Bd-2E0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikebeijing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zkE-Kg-AZT"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYY-UG-A9N">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-B0-K5Q">
+                            <color key="backgroundColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YpI-tS-uCq"/>
+                            </constraints>
+                            <state key="normal" title="申请成为嗨客">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="joinBtnClick:" destination="-1" eventType="touchUpInside" id="gbE-uE-hvb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-Ec-8ck">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Vpw-hc-ZMO"/>
+                                <constraint firstAttribute="width" constant="20" id="lWE-F2-zWE"/>
+                            </constraints>
+                            <state key="normal" image="未选中"/>
+                            <state key="selected" image="选中"/>
+                            <connections>
+                                <action selector="sureBtnClick:" destination="-1" eventType="touchUpInside" id="Vtv-s6-BRM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojP-Nf-gpo">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="BGS-lz-cNM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="我已阅读并同意《嗨客推广合作协议》">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ruleBtnClick:" destination="-1" eventType="touchUpInside" id="h2T-Qf-Vlo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7qL-B0-K5Q" secondAttribute="trailing" constant="50" id="0vY-xu-S4H"/>
+                        <constraint firstItem="7qL-B0-K5Q" firstAttribute="top" secondItem="ojP-Nf-gpo" secondAttribute="bottom" constant="15" id="2kB-xJ-QRM"/>
+                        <constraint firstItem="7qL-B0-K5Q" firstAttribute="top" secondItem="NMX-Ec-8ck" secondAttribute="bottom" constant="15" id="Sxf-6p-PWC"/>
+                        <constraint firstItem="NMX-Ec-8ck" firstAttribute="leading" secondItem="7qL-B0-K5Q" secondAttribute="leading" id="aPt-nL-aQn"/>
+                        <constraint firstItem="ojP-Nf-gpo" firstAttribute="leading" secondItem="NMX-Ec-8ck" secondAttribute="trailing" constant="10" id="dha-H6-TUj"/>
+                        <constraint firstAttribute="bottom" secondItem="7qL-B0-K5Q" secondAttribute="bottom" constant="50" id="ltU-Io-BIe"/>
+                        <constraint firstItem="7qL-B0-K5Q" firstAttribute="leading" secondItem="rYY-UG-A9N" secondAttribute="leading" constant="50" id="tZg-pZ-DrW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zkE-Kg-AZT" secondAttribute="trailing" id="2Tp-J8-pod"/>
+                <constraint firstItem="rYY-UG-A9N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3AD-FX-flZ"/>
+                <constraint firstItem="zkE-Kg-AZT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4SN-Zw-8rY"/>
+                <constraint firstAttribute="bottom" secondItem="zkE-Kg-AZT" secondAttribute="bottom" id="IB6-IB-2mi"/>
+                <constraint firstAttribute="bottom" secondItem="rYY-UG-A9N" secondAttribute="bottom" id="V5g-ZM-maS"/>
+                <constraint firstItem="rYY-UG-A9N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VOE-YB-mX5"/>
+                <constraint firstItem="zkE-Kg-AZT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vau-fx-J0W"/>
+                <constraint firstAttribute="trailing" secondItem="rYY-UG-A9N" secondAttribute="trailing" id="Z5n-tf-gis"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="haikebeijing.jpg" width="375" height="602"/>
+        <image name="未选中" width="20" height="20"/>
+        <image name="选中" width="20" height="20"/>
+    </resources>
+</document>

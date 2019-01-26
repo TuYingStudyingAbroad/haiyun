@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zn3-GU-zfQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Get Money View Controller-->
+        <scene sceneID="Doi-vA-d0F">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zn3-GU-zfQ" customClass="getMoneyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gGn-Qk-awr"/>
+                        <viewControllerLayoutGuide type="bottom" id="nnq-Lc-vHx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ksa-76-7On">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtx-7t-DPW">
+                                <frame key="frameInset" minY="20" width="600" height="580"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Zn3-GU-zfQ" id="mQf-W6-CBi"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qtx-7t-DPW" firstAttribute="top" secondItem="gGn-Qk-awr" secondAttribute="bottom" id="NG6-Hr-zNg"/>
+                            <constraint firstItem="nnq-Lc-vHx" firstAttribute="top" secondItem="qtx-7t-DPW" secondAttribute="bottom" id="YHS-oa-NMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="qtx-7t-DPW" secondAttribute="trailing" id="gcp-Ms-Z2T"/>
+                            <constraint firstItem="qtx-7t-DPW" firstAttribute="leading" secondItem="ksa-76-7On" secondAttribute="leading" id="pYE-AU-8El"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="qtx-7t-DPW" id="xmq-Vh-O2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2t2-JR-BoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="-159"/>
+        </scene>
+    </scenes>
+</document>

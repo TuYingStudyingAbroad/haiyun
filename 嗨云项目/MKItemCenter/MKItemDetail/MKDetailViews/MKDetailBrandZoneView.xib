@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sKe-MR-iNf" customClass="MKDetailBrandZoneView">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-iN-dwc">
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fao-Qt-hB8">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="9EV-Dc-C43" userLabel="width = 40"/>
+                        <constraint firstAttribute="height" constant="40" id="zFy-8t-5ex" userLabel="height = 40"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQc-7f-FzO">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.10897387564182281" green="0.10897061228752136" blue="0.10897244513034821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNe-L9-hXa">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="YC5-Up-Lc8"/>
+                        <constraint firstAttribute="height" constant="30" id="dqy-Rv-ahO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="进入">
+                        <color key="titleColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30E-Sh-6Fa" userLabel="Content">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Yeg-iN-dwc" secondAttribute="bottom" id="1vM-r8-Fms"/>
+                <constraint firstAttribute="trailing" secondItem="bNe-L9-hXa" secondAttribute="trailing" constant="12" id="3L3-P5-LZQ"/>
+                <constraint firstItem="hQc-7f-FzO" firstAttribute="centerY" secondItem="fao-Qt-hB8" secondAttribute="centerY" id="8kL-qm-JhU"/>
+                <constraint firstItem="30E-Sh-6Fa" firstAttribute="top" secondItem="fao-Qt-hB8" secondAttribute="bottom" constant="14" id="AGX-uL-Unk"/>
+                <constraint firstAttribute="centerY" secondItem="fao-Qt-hB8" secondAttribute="centerY" id="CUA-Z2-kzi"/>
+                <constraint firstAttribute="trailing" secondItem="Yeg-iN-dwc" secondAttribute="trailing" id="FbR-9A-CtA"/>
+                <constraint firstItem="fao-Qt-hB8" firstAttribute="top" secondItem="sKe-MR-iNf" secondAttribute="top" constant="10" id="GT9-G4-gAK"/>
+                <constraint firstItem="bNe-L9-hXa" firstAttribute="top" secondItem="sKe-MR-iNf" secondAttribute="top" constant="15" id="KYt-co-bDc"/>
+                <constraint firstItem="Yeg-iN-dwc" firstAttribute="top" secondItem="sKe-MR-iNf" secondAttribute="top" id="Lhb-mi-KnM"/>
+                <constraint firstItem="hQc-7f-FzO" firstAttribute="leading" secondItem="fao-Qt-hB8" secondAttribute="trailing" constant="15" id="P1S-kp-x61"/>
+                <constraint firstItem="Yeg-iN-dwc" firstAttribute="leading" secondItem="sKe-MR-iNf" secondAttribute="leading" id="QBT-hn-qth"/>
+                <constraint firstAttribute="trailing" secondItem="30E-Sh-6Fa" secondAttribute="trailing" constant="12" id="Ton-7S-DJc"/>
+                <constraint firstItem="fao-Qt-hB8" firstAttribute="leading" secondItem="sKe-MR-iNf" secondAttribute="leading" constant="12" id="Xsy-FX-lTm"/>
+                <constraint firstAttribute="centerY" secondItem="hQc-7f-FzO" secondAttribute="centerY" id="ZVY-C3-7ac"/>
+                <constraint firstItem="30E-Sh-6Fa" firstAttribute="leading" secondItem="sKe-MR-iNf" secondAttribute="leading" constant="12" id="aaD-2N-ICn"/>
+                <constraint firstAttribute="bottom" secondItem="30E-Sh-6Fa" secondAttribute="bottom" constant="11" id="shx-WX-Uio"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CUA-Z2-kzi"/>
+                    <exclude reference="ZVY-C3-7ac"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="button" destination="Yeg-iN-dwc" id="bzM-RU-49L"/>
+                <outlet property="contentLabel" destination="30E-Sh-6Fa" id="uoP-5b-BgQ"/>
+                <outlet property="imageView" destination="fao-Qt-hB8" id="N77-ou-Eur"/>
+                <outlet property="inButton" destination="bNe-L9-hXa" id="6sT-W9-8Hu"/>
+                <outlet property="title" destination="hQc-7f-FzO" id="5ia-ZC-4Ir"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="250"/>
+        </view>
+    </objects>
+</document>

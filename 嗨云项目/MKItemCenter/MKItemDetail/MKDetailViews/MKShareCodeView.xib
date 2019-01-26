@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKShareCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="446"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-gZ-62n">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="1hN-O3-m1W"/>
+                        <constraint firstAttribute="height" constant="30" id="WuU-2t-e9x"/>
+                    </constraints>
+                    <state key="normal" image="X_19x19"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-1D-rKp">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYc-oo-1mc" userLabel="seperate">
+                            <color key="backgroundColor" red="0.87326538562774658" green="0.87323927879333496" blue="0.87325406074523926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="6yR-fV-7rd"/>
+                                <constraint firstAttribute="height" constant="28" id="CkQ-rW-VLt"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="CkQ-rW-VLt"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-Ia-wnj">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YTn-ks-IC1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="分享到微信">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-8E-DdW" userLabel="seperate">
+                            <color key="backgroundColor" red="0.87326538562774658" green="0.87323927879333496" blue="0.87325406074523926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HWk-iR-KpE"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2q-zh-mRU">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="保存到手机">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-Bv-Fm6"/>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MQ9-Ia-wnj" firstAttribute="top" secondItem="ZVP-8E-DdW" secondAttribute="bottom" id="5tB-4z-XFZ"/>
+                        <constraint firstItem="ZYc-oo-1mc" firstAttribute="height" secondItem="MQ9-Ia-wnj" secondAttribute="height" id="8Vp-aZ-qTb"/>
+                        <constraint firstItem="ZYc-oo-1mc" firstAttribute="leading" secondItem="i2q-zh-mRU" secondAttribute="trailing" id="EHR-MV-Euz"/>
+                        <constraint firstItem="i2q-zh-mRU" firstAttribute="width" secondItem="MQ9-Ia-wnj" secondAttribute="width" id="Fdh-bR-7hY"/>
+                        <constraint firstItem="i2q-zh-mRU" firstAttribute="top" secondItem="ZVP-8E-DdW" secondAttribute="bottom" id="Htj-g2-j2l"/>
+                        <constraint firstItem="MQ9-Ia-wnj" firstAttribute="leading" secondItem="ZYc-oo-1mc" secondAttribute="trailing" id="LMB-SC-dyR"/>
+                        <constraint firstItem="2gc-Bv-Fm6" firstAttribute="top" secondItem="QVo-1D-rKp" secondAttribute="top" id="NF8-1X-ZSY"/>
+                        <constraint firstAttribute="trailing" secondItem="ZVP-8E-DdW" secondAttribute="trailing" constant="10" id="VFD-1Z-0P9"/>
+                        <constraint firstAttribute="bottom" secondItem="i2q-zh-mRU" secondAttribute="bottom" id="X0V-Zy-PXa"/>
+                        <constraint firstItem="ZVP-8E-DdW" firstAttribute="leading" secondItem="QVo-1D-rKp" secondAttribute="leading" constant="11" id="X6a-fc-Bcl"/>
+                        <constraint firstItem="i2q-zh-mRU" firstAttribute="height" secondItem="MQ9-Ia-wnj" secondAttribute="height" id="XIP-uE-cw8"/>
+                        <constraint firstItem="i2q-zh-mRU" firstAttribute="leading" secondItem="QVo-1D-rKp" secondAttribute="leading" id="agv-be-MPN"/>
+                        <constraint firstItem="i2q-zh-mRU" firstAttribute="top" secondItem="ZVP-8E-DdW" secondAttribute="bottom" id="bYR-0G-AlJ"/>
+                        <constraint firstAttribute="trailing" secondItem="MQ9-Ia-wnj" secondAttribute="trailing" id="fnh-uN-mNu"/>
+                        <constraint firstItem="ZYc-oo-1mc" firstAttribute="top" secondItem="MQ9-Ia-wnj" secondAttribute="top" id="gCX-aS-hOb"/>
+                        <constraint firstItem="MQ9-Ia-wnj" firstAttribute="leading" secondItem="i2q-zh-mRU" secondAttribute="trailing" constant="1" id="goz-OF-O2L"/>
+                        <constraint firstItem="ZVP-8E-DdW" firstAttribute="top" secondItem="2gc-Bv-Fm6" secondAttribute="bottom" id="hRH-lh-Ab0"/>
+                        <constraint firstAttribute="trailing" secondItem="2gc-Bv-Fm6" secondAttribute="trailing" id="ouX-V2-pQU"/>
+                        <constraint firstItem="2gc-Bv-Fm6" firstAttribute="leading" secondItem="QVo-1D-rKp" secondAttribute="leading" id="xZV-vy-UWW"/>
+                        <constraint firstAttribute="bottom" secondItem="MQ9-Ia-wnj" secondAttribute="bottom" id="xfs-ff-Awj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5tB-4z-XFZ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wNb-gZ-62n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Fa-XW-YnI"/>
+                <constraint firstAttribute="trailing" secondItem="QVo-1D-rKp" secondAttribute="trailing" id="IsR-IU-B17"/>
+                <constraint firstItem="QVo-1D-rKp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="L4A-14-3z5"/>
+                <constraint firstAttribute="bottom" secondItem="QVo-1D-rKp" secondAttribute="bottom" id="eLY-eY-Nbp"/>
+                <constraint firstItem="QVo-1D-rKp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tP3-il-1cD"/>
+                <constraint firstAttribute="trailing" secondItem="wNb-gZ-62n" secondAttribute="trailing" id="ukr-jg-BaL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="wNb-gZ-62n" id="WHc-wI-xxC"/>
+                <outlet property="codeImageView" destination="2gc-Bv-Fm6" id="wa3-GB-Nbn"/>
+                <outlet property="mainView" destination="QVo-1D-rKp" id="Vkc-Mq-pqA"/>
+                <outlet property="saveInPhoneBtn" destination="i2q-zh-mRU" id="KjJ-y5-yUD"/>
+                <outlet property="shareToWeChatBtn" destination="MQ9-Ia-wnj" id="MJq-rd-RVw"/>
+            </connections>
+            <point key="canvasLocation" x="322" y="597"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="X_19x19" width="20" height="20"/>
+    </resources>
+</document>

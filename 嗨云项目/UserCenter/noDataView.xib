@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="noDataView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsA-0f-J5D">
+                    <rect key="frame" x="245" y="245" width="110" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有粉丝哟~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTJ-Ig-yWI">
+                            <rect key="frame" x="0.0" y="80" width="110" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zanwufensi" translatesAutoresizingMaskIntoConstraints="NO" id="Kxo-q5-ooS" customClass="zanwufensi">
+                            <rect key="frame" x="15" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="BdJ-Bb-xqU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lsA-0f-J5D" secondAttribute="height" id="7L4-ZW-AcN"/>
+                        <constraint firstItem="Kxo-q5-ooS" firstAttribute="top" secondItem="lsA-0f-J5D" secondAttribute="top" id="DLI-5q-d0e"/>
+                        <constraint firstAttribute="trailing" secondItem="Kxo-q5-ooS" secondAttribute="trailing" constant="15" id="EaI-4h-pNB"/>
+                        <constraint firstItem="tTJ-Ig-yWI" firstAttribute="leading" secondItem="lsA-0f-J5D" secondAttribute="leading" id="KGU-fk-8oA"/>
+                        <constraint firstAttribute="bottom" secondItem="tTJ-Ig-yWI" secondAttribute="bottom" id="WSN-SQ-zNg"/>
+                        <constraint firstItem="Kxo-q5-ooS" firstAttribute="leading" secondItem="lsA-0f-J5D" secondAttribute="leading" constant="15" id="niG-Bq-Rg2"/>
+                        <constraint firstItem="tTJ-Ig-yWI" firstAttribute="top" secondItem="Kxo-q5-ooS" secondAttribute="bottom" id="qmF-hX-XOi"/>
+                        <constraint firstAttribute="trailing" secondItem="tTJ-Ig-yWI" secondAttribute="trailing" id="sPW-0a-Ml4"/>
+                        <constraint firstAttribute="width" constant="110" id="yaM-FR-EFp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lsA-0f-J5D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bgf-5r-qGP"/>
+                <constraint firstItem="lsA-0f-J5D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="O25-a8-OJ6"/>
+            </constraints>
+            <point key="canvasLocation" x="184" y="165"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zanwufensi" width="102" height="102"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKDetailChooseSKUButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="239"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalHuggingPriority="245" translatesAutoresizingMaskIntoConstraints="NO" id="awl-yI-qgF" userLabel="seperator">
+                    <color key="backgroundColor" red="0.87326538562774658" green="0.87323927879333496" blue="0.87325406074523926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="NHS-2J-Zw1"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cew-ME-wt2">
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_more" translatesAutoresizingMaskIntoConstraints="NO" id="TLR-Rf-uMI"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择  版本分类" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA3-Zn-qZa">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="TLR-Rf-uMI" secondAttribute="centerY" id="0E9-Mi-Wk1"/>
+                <constraint firstAttribute="bottom" secondItem="cew-ME-wt2" secondAttribute="bottom" id="0Ev-uy-h6I"/>
+                <constraint firstAttribute="trailing" secondItem="TLR-Rf-uMI" secondAttribute="trailing" constant="12" id="9e6-uh-KAe"/>
+                <constraint firstItem="awl-yI-qgF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AVU-in-96z"/>
+                <constraint firstAttribute="trailing" secondItem="awl-yI-qgF" secondAttribute="trailing" constant="12" id="EmY-4r-nUd"/>
+                <constraint firstItem="cew-ME-wt2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MNL-Rb-I7r"/>
+                <constraint firstAttribute="trailing" secondItem="cew-ME-wt2" secondAttribute="trailing" id="U7B-ph-IZF"/>
+                <constraint firstAttribute="centerY" secondItem="gA3-Zn-qZa" secondAttribute="centerY" id="c3v-FD-Q1Z"/>
+                <constraint firstItem="cew-ME-wt2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jXC-5C-GpG"/>
+                <constraint firstItem="gA3-Zn-qZa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="qfM-86-LiT"/>
+                <constraint firstItem="awl-yI-qgF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="thT-Nf-O8V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="cew-ME-wt2" id="Myz-SN-qhn"/>
+                <outlet property="title" destination="gA3-Zn-qZa" id="JTx-N5-oPQ"/>
+            </connections>
+            <point key="canvasLocation" x="541" y="162.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_more" width="7" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="fansSortView" id="5xm-Es-aCQ" customClass="fansSortView">
+            <rect key="frame" x="0.0" y="0.0" width="546" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNN-wD-sGQ" customClass="FL_Button">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="累计金额">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortBtnClick:" destination="5xm-Es-aCQ" eventType="touchUpInside" id="0Q0-Hp-DzC"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obU-RD-93d">
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h2-RR-5LX" customClass="FL_Button">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="加入时间">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sortBtnClick:" destination="5xm-Es-aCQ" eventType="touchUpInside" id="sVj-pg-LMc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="obU-RD-93d" firstAttribute="top" secondItem="5xm-Es-aCQ" secondAttribute="top" constant="5" id="2hz-s0-fvU"/>
+                <constraint firstItem="0h2-RR-5LX" firstAttribute="leading" secondItem="5xm-Es-aCQ" secondAttribute="leading" id="8tQ-Q1-3Hc"/>
+                <constraint firstAttribute="bottom" secondItem="0h2-RR-5LX" secondAttribute="bottom" id="Asd-RD-U0p"/>
+                <constraint firstAttribute="bottom" secondItem="qNN-wD-sGQ" secondAttribute="bottom" id="Dxr-Ui-JuR"/>
+                <constraint firstAttribute="trailing" secondItem="qNN-wD-sGQ" secondAttribute="trailing" id="GXC-dB-IZS"/>
+                <constraint firstItem="qNN-wD-sGQ" firstAttribute="leading" secondItem="0h2-RR-5LX" secondAttribute="trailing" constant="1" id="L1u-X6-6Sa"/>
+                <constraint firstAttribute="bottom" secondItem="obU-RD-93d" secondAttribute="bottom" constant="5" id="YfK-hZ-nqZ"/>
+                <constraint firstItem="qNN-wD-sGQ" firstAttribute="top" secondItem="5xm-Es-aCQ" secondAttribute="top" id="aAU-Ds-E5P"/>
+                <constraint firstItem="qNN-wD-sGQ" firstAttribute="leading" secondItem="obU-RD-93d" secondAttribute="trailing" id="bFA-f7-XLD"/>
+                <constraint firstItem="obU-RD-93d" firstAttribute="leading" secondItem="0h2-RR-5LX" secondAttribute="trailing" id="dS2-BI-Bdz"/>
+                <constraint firstItem="qNN-wD-sGQ" firstAttribute="width" secondItem="0h2-RR-5LX" secondAttribute="width" id="jdp-Do-Dgo"/>
+                <constraint firstItem="0h2-RR-5LX" firstAttribute="top" secondItem="5xm-Es-aCQ" secondAttribute="top" id="zO3-ej-CG6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="incomeBtn" destination="qNN-wD-sGQ" id="CTA-HU-scW"/>
+                <outlet property="timeBtn" destination="0h2-RR-5LX" id="79h-ax-syC"/>
+            </connections>
+            <point key="canvasLocation" x="383" y="20"/>
+        </view>
+    </objects>
+</document>

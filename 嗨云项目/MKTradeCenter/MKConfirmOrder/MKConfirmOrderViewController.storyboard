@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="VpF-hA-TGW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Confirm Order View Controller-->
+        <scene sceneID="Uvs-pI-9re">
+            <objects>
+                <viewController storyboardIdentifier="MKConfirmOrderViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VpF-hA-TGW" customClass="MKConfirmOrderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fbC-LX-tGi"/>
+                        <viewControllerLayoutGuide type="bottom" id="qb1-GR-VZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Snm-KB-bEi">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xK5-nq-GGo" customClass="TPKeyboardAvoidingTableView">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.87326538562774658" green="0.87323927879333496" blue="0.87325406074523926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.9166492223739624" green="0.91662180423736572" blue="0.91663730144500732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VpF-hA-TGW" id="a5Z-GB-Dao"/>
+                                    <outlet property="delegate" destination="VpF-hA-TGW" id="c4E-gW-kXA"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-45-NLq">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19V-Xz-60I">
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.98619568347930908" green="0.0" blue="0.19841507077217102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMk-9s-gAh">
+                                        <color key="backgroundColor" red="0.98619568347930908" green="0.0" blue="0.19841507077217102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="HVJ-g9-iVe"/>
+                                            <constraint firstAttribute="width" constant="105" id="UJu-gI-opr"/>
+                                        </constraints>
+                                        <state key="normal" title="立即提交">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickPayBtn:" destination="VpF-hA-TGW" eventType="touchUpInside" id="EJ2-8T-xzS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUs-F3-aOK">
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.98619568347930908" green="0.0" blue="0.19841507077217102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付金额：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-hv-mZ3">
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="b4o-hv-mZ3" firstAttribute="centerY" secondItem="Bk7-45-NLq" secondAttribute="centerY" id="1nt-Zw-TxJ"/>
+                                    <constraint firstItem="aUs-F3-aOK" firstAttribute="leading" secondItem="19V-Xz-60I" secondAttribute="trailing" id="4on-s2-SyC"/>
+                                    <constraint firstAttribute="centerY" secondItem="BMk-9s-gAh" secondAttribute="centerY" id="9LI-QU-Kb7"/>
+                                    <constraint firstItem="19V-Xz-60I" firstAttribute="leading" secondItem="b4o-hv-mZ3" secondAttribute="trailing" id="eQY-Dd-LN3"/>
+                                    <constraint firstItem="aUs-F3-aOK" firstAttribute="centerY" secondItem="Bk7-45-NLq" secondAttribute="centerY" id="eqM-s7-Nts"/>
+                                    <constraint firstItem="19V-Xz-60I" firstAttribute="centerY" secondItem="Bk7-45-NLq" secondAttribute="centerY" constant="2" id="gr6-q5-x4b"/>
+                                    <constraint firstItem="b4o-hv-mZ3" firstAttribute="leading" secondItem="Bk7-45-NLq" secondAttribute="leading" constant="12.5" id="imx-g6-jUf"/>
+                                    <constraint firstAttribute="trailing" secondItem="BMk-9s-gAh" secondAttribute="trailing" constant="12" id="w3m-kF-yaj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bk7-45-NLq" secondAttribute="bottom" id="DxW-QC-Sm0"/>
+                            <constraint firstItem="xK5-nq-GGo" firstAttribute="leading" secondItem="Snm-KB-bEi" secondAttribute="leading" id="Iv9-2d-haF"/>
+                            <constraint firstItem="Bk7-45-NLq" firstAttribute="leading" secondItem="Snm-KB-bEi" secondAttribute="leading" id="Ksi-xo-1qQ"/>
+                            <constraint firstAttribute="bottom" secondItem="xK5-nq-GGo" secondAttribute="bottom" constant="54" id="R50-dT-mug"/>
+                            <constraint firstItem="xK5-nq-GGo" firstAttribute="top" secondItem="fbC-LX-tGi" secondAttribute="top" id="dNn-sz-bPu"/>
+                            <constraint firstItem="Bk7-45-NLq" firstAttribute="top" secondItem="xK5-nq-GGo" secondAttribute="bottom" id="pD0-Qs-l4W"/>
+                            <constraint firstAttribute="trailing" secondItem="xK5-nq-GGo" secondAttribute="trailing" id="rAa-EJ-klu"/>
+                            <constraint firstItem="Bk7-45-NLq" firstAttribute="width" secondItem="xK5-nq-GGo" secondAttribute="width" id="vV0-xT-16J"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="payBtn" destination="BMk-9s-gAh" id="trl-Jz-6cD"/>
+                        <outlet property="tableView" destination="xK5-nq-GGo" id="X96-l1-TWU"/>
+                        <outlet property="totalLabel" destination="aUs-F3-aOK" id="IVo-pN-qEn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viY-LI-pNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="95"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
